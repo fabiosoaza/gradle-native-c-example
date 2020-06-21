@@ -1,0 +1,2 @@
+rootProject.name = 'gradle-native-c-example'
+include 'gradle-native-c-example-library', 'gradle-native-c-example-app'

@@ -1,0 +1,34 @@
+/*
+ * There is currently no "C application" plugin, so this build uses the "C++ application" plugin and then reconfigures it
+ * to build C instead. Later versions of Gradle will add a "C application" plugin.
+ */
+plugins {
+    id 'cpp-application'	
+    id 'xcode'
+    id 'visual-studio'
+}
+
+application {
+
+//necessary explicit directory files with source because
+//cpp plugin searchs all files with cpp extension in src/main/cpp by default
+
+     binaries.configureEach {
+        def compileTask = compileTask.get()
+        compileTask.source.from fileTree(dir: "src/main/c", include: "**/*.c")
+     }
+
+    dependencies {
+        implementation project(':gradle-native-c-example-library')
+    }
+
+targetMachines = [
+        machines.windows.x86_64,
+        machines.macOS.x86_64,
+        machines.linux.x86_64
+    ]
+
+
+}
+
+
