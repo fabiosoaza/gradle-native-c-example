@@ -13,7 +13,7 @@ Example of native code written in C lang built with gradle
 That's it!
 
 ### Useful Links
-[Benjamin Mahr - Introduction into C++ Builds with Gradle](https://thoughts-on-coding.com/2019/04/10/introduction-into-c-builds-with-gradle/) 
-[Building C++ Applications](https://guides.gradle.org/building-cpp-applications/)
-[Gradle Blog - Introducing the new C++ plugins](https://blog.gradle.org/introducing-the-new-cpp-plugins)
-[Gradle native c application sample](https://github.com/gradle/native-samples/tree/master/c/application)
+[Benjamin Mahr - Introduction into C++ Builds with Gradle](https://thoughts-on-coding.com/2019/04/10/introduction-into-c-builds-with-gradle/)  
+[Building C++ Applications](https://guides.gradle.org/building-cpp-applications/)  
+[Gradle Blog - Introducing the new C++ plugins](https://blog.gradle.org/introducing-the-new-cpp-plugins)  
+[Gradle native c application sample](https://github.com/gradle/native-samples/tree/master/c/application)  
